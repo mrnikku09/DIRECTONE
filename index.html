@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directone 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+    body {
+        margin: 0vw;
+    }
+
+    #a11 {
+        background-color: rgb(0, 0, 0);
+        /* padding:0.2vw 5vw;  */
+        justify-content: center;
+    }
+
+    #a12 {
+        font-size: 1.5vw;
+        padding-left: 5vw;
+        /* background-color: red; */
+    }
+
+    #a13 {
+        color: red;
+    }
+
+    #a14 {
+        color: aliceblue;
+    }
+
+    #a15 {
+        display: flex;
+        float: right;
+        height: 100%;
+        font-size: 1.5vw;
+        /* background-color: aqua; */
+        justify-content: center;
+        align-items: center;
+        padding: 0.2vw 0vw;
+    }
+
+    #a15 a {
+        text-decoration: none;
+
+    }
+
+    #a15 a li {
+        justify-content: center;
+        list-style: none;
+        color: white;
+        padding: 0vw 3vw;
+    }
+
+    #a20lord {
+        padding: 5vw 3vw;
+        height: 70vw;
+        width: 100%;
+    }
+
+    #a21 {
+        width: 25%;
+        height: 10vw;
+        /* background-color: aqua; */
+        margin: 0vw 1vw;
+        display: flex;
+    }
+
+    #a22 {
+        width: 50%;
+        height: 10vw;
+        /* background-color: rgb(0, 255, 47); */
+        margin: 0vw 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #a22 li {
+        list-style: none;
+        margin: 0vw 1vw;
+    }
+
+    #a22 li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 1.5vw;
+    }
+
+    #a23 {
+        width: 25%;
+        height: 10vw;
+        /* background-color: rgb(102, 0, 255); */
+        margin: 0vw 1vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #a23 button {
+        height: 3vw;
+        width: 15vw;
+        font-size: 1vw;
+        background-color: #ff414d;
+        border-radius: 5vw;
+        color: white;
+    }
+
+    #a24 {
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #a25 {
+        width: 50%;
+        height: 100%;
+    }
+
+    #a26 {
+        width: 50%;
+        height: 100%;
+        padding: 2vw 0vw;
+
+    }
+
+    #a27 {
+        font-size: 2.3vw;
+        color: white;
+    }
+
+    #a28 {
+        font-size: .9vw;
+        color: white;
+    }
+
+    #a30 {
+        /* background-color: rgb(255, 0, 0); */
+        margin-top: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #a31 {
+        text-align: center;
+    }
+
+    #a34 {
+        color: white;
+        font-size: 4.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #a32 {
+        color: white;
+        font-size: 4.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #a33 {
+        color: white;
+        font-size: 1.2vw;
+    }
+
+    #a40 {
+        /* background-color: #ff414d; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5vw 0vw;
+        height: 3vw;
+    }
+
+    #a46 {
+        width: 100%;
+        height: 100%;
+        background-color: #ff414d;
+    }
+
+    #a41 {
+        background-color: white;
+        height: 100%;
+        width: 20vw;
+        padding: .2vw 0vw;
+        border-radius: 2vw;
+    }
+
+    #a45,
+    #a46,
+    #a47 {
+        height: 100%;
+        width: 90%;
+        border-radius: 2vw;
+        border: transparent;
+    }
+
+    #a42 {
+        color: black;
+        font-size: 1.5vw;
+    }
+
+    #a47 {
+        display: flex;
+        height: 100%;
+        width: 60vw;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgb(3, 231, 26); */
+    }
+
+    #a50lord {
+        background-color: #dfdddd;
+        border: solid #13c013 2px;
+        height: 50vw;
+        width: 100%;
+        /* margin-top: -5vw; */
+        padding: 0vw 3vw;
+    }
+
+    #a51main {
+        border: solid red 2px;
+        margin-top: -5vw;
+        height: 40vw;
+        width: 100%;
+    }
+
+    #a52 {
+        background-color: red;
+        height: 50%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .a52
+    {
+        margin-top: 5vw;
+    }
+
+    .a53 {
+        height: 100%;
+        width: 50%;
+        margin: 0vw 1.5vw;
+        padding: .5vw .5vw;
+        border-radius: 1vw;
+        background-color: white;
+        cursor: pointer;
+        transition: .3s ease-in;
+    }
+
+    .a53:hover {
+        height: 100%;
+        width: 12vw;
+        margin: 0vw 1.5vw;
+        padding: .5vw .5vw;
+        border-radius: 1vw;
+        background-color: #ff414d;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .a53 {
+            
+            transform: translateY(40%);
+            transition: transform 1s ease;
+
+        }
+
+        .a53:nth-last-of-type(even) {
+            transform: translateY(8vw);
+        }
+
+        .a53.w11 {
+            transform: translateY(0);
+        }
+
+    #a59 {
+        width: 100%;
+        height: 50%;
+        background-color: blue;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .a59 {
+        width: 100%;
+        height: 50%;
+        background-color: black;
+        text-align: center;
+        padding-top: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #a60 {
+        font-size: 1.4vw;
+    }
+
+    #a61 {
+        font-size: 1.2vw;
+        color: #ff414d;
+        background-color: #f0f4f7;
+    }
+
+    #a62 {
+        font-size: 1.2vw;
+        color: grey;
+        /* background-color: gray; */
+    }
+
+
+    @media only screen and (max-width:768px) {
+        #a12 {
+            font-size: 2.5vw;
+        }
+
+        #a15 {
+            font-size: 2.5vw;
+        }
+
+        #a20lord {
+            height: 200vw;
+            width: 100%;
+        }
+
+        #a24 {
+            display: block;
+        }
+
+        #a21 {
+            width: 100%;
+            padding: 0vw 0vw;
+            justify-content: center;
+            display: flex;
+            height: 15vw;
+            align-items: center;
+        }
+
+        #a22 {
+            padding: 5vw 0vw;
+            margin: 5vw 0vw;
+            width: 100%;
+        }
+
+        #a22 li a {
+            font-size: 3vw;
+        }
+
+        #a23 {
+
+            width: 100%;
+        }
+
+        #a23 button {
+            height: 8vw;
+            width: 30vw;
+            font-size: 3vw;
+        }
+
+        #a24 {
+            padding: 5vw 0vw;
+        }
+
+        #a25 {
+            width: 15vw;
+        }
+
+        #a26 {
+            width: 25vw;
+            /* background-color: red; */
+        }
+
+        #a27 {
+            font-size: 5vw;
+        }
+
+        #a28 {
+            font-size: 2vw;
+        }
+
+        #a30 {
+            margin: 30vw 0vw;
+        }
+
+        #a34 {
+            font-size: 7vw;
+        }
+
+        #a32 {
+            font-size: 7vw;
+            text-align: center;
+        }
+
+        #a33 {
+            font-size: 1.8vw;
+        }
+
+        #a41 {
+            height: 5vw;
+            width: 40vw;
+            margin: 2vw 0vw;
+        }
+
+        #a40 {
+            display: flex;
+            height: 30vw;
+            align-items: center;
+            margin: 10vw 0vw;
+        }
+
+        #a47 {
+            display: block;
+            height: 100%;
+            width: 40vw;
+        }
+
+        #a42 i {
+            font-size: 3vw;
+        }
+
+        #a50lord
+        {
+            height: auto;
+        }
+        #a51main{
+            height: 100%;
+        }
+
+        #a52
+        {
+            display: block;
+        }
+        .a53{
+            width: 100%;
+            /* display: flex; */
+            height: 100vw;
+        }
+        #a59
+        {
+            height: 70%;
+        }
+        #a60
+        {
+            font-size: 8vw;
+        }
+       #a61,#a62 {
+        font-size: 5vw;
+        }
+
+
+    }
+</style>
+
+<body>
+    <header>
+        <div id="a11">
+            <span id="a12"><span id="a13">Free Call</span><span id="a14">+1 234 456 78910</span></span>
+            <div id="a15">
+                <a href="#">
+                    <li>Facebook</li>
+                </a>
+                <a href="#">
+                    <li>Twitter</li>
+                </a>
+                <a href="#">
+                    <li>Dibble</li>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div id="a20lord"
+            style="background-image: url(https://c4.wallpaperflare.com/wallpaper/800/831/598/digital-art-neon-mountains-lake-wallpaper-preview.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;">
+            <div id="a24">
+                <div id="a21">
+                    <div id="a25"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAE1F7El9qNugtFZBBsBBzjE4FTlDOycn2M3cXF4FIF39ElZVE-WGa&usqp=CAE&s"
+                            height="100%" width="100%"></div>
+                    <div id="a26"><span id="a27"><b>Directone</b></span><br>
+                        <spn id="a28">DIRECTORY AAND LISTING</spn>
+                    </div>
+                </div>
+                <div id="a22">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CONTRACT</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">NEWS</a></li>
+                </div>
+                <div id="a23"><button>+ADD LISTINING</button></div>
+            </div>
+            <div id="a30">
+                <span id="a31"><span id="a34">Let's Explore Your</span><br><span id="a32">Awesome City</span><br><span
+                        id="a33">Find great places to stay, eat, shop, or visit from local experts.</span></span>
+            </div>
+            <div id="a40">
+                <div id="a47">
+                    <div id="a41"><span id="a42"><i class="fa fa-search"></i></span><input id="a45"
+                            placeholder="Where are U Looking For?" type="text"></div>
+                    <div id="a41"><span id="a42"><i class="fa fa-map-marker"></i></span><input id="a45"
+                            placeholder="Search Location" type="text"></div>
+                    <div id="a41"><span id="a42"><i class="fa fa-chevron-down"></i>All Categories</span></div>
+                    <div id="a41"><button id="a46"><span id="a42"><i class="fa fa-search"></i>SEARCH</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="a50lord">
+            <div id="a51main">
+                <div id="a52">
+                    <div id="a53" class="a53">
+                        <div id="a59"><img
+                                src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?size=338&ext=jpg&ga=GA1.2.1562294483.1662638071"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">FOOD & DRINKS</span><br><span id="a61">103</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a54" class="a53">
+                        <div id="a59"><img
+                                src="https://img.freepik.com/free-vector/hotel-branding-identity-corporate-vector-logo-design-template_460848-14015.jpg?size=626&ext=jpg&ga=GA1.2.1562294483.1662638071"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">HOTELS</span><br><span id="a61">40</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a55" class="a53">
+                        <div id="a59"><img
+                                src="https://img.freepik.com/free-psd/torn-hole-white-wall-paper-yellow-background_24972-376.jpg?size=626&ext=jpg&ga=GA1.2.1562294483.1662638071"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">SHOPING</span><br><span id="a61">100</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a56" class="a53">
+                        <div id="a59"><img
+                                src="https://img.freepik.com/free-vector/pure-organic-natural-green-aloe-vera-leaves-healthy-treatment-label-banners-with-text_1284-9400.jpg?size=338&ext=jpg&ga=GA1.2.1562294483.1662638071"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">BEAUTY</span><br><span id="a61">36</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a57" class="a53">
+                        <div id="a59"><img
+                                src="https://img.freepik.com/free-vector/branding-identity-corporate-healthy-life-vector-logo-design_460848-13633.jpg?size=338&ext=jpg&ga=GA1.2.1562294483.1662638071"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">FITNESS</span><br><span id="a61">30</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a58" class="a53">
+                        <div id="a59"><img
+                                src="https://img.freepik.com/free-photo/neon-sign-bar-with-image-cocktail_23-2148184280.jpg?size=338&ext=jpg&ga=GA1.2.1562294483.1662638071"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">BAR & CLUB</span><br><span id="a61">12</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                </div>
+
+
+                <div id="a52" class="a52">
+                    <div id="a53" class="a53">
+                        <div id="a59"><img
+                                src="https://png.pngtree.com/element_our/png/20180926/wolf-bolt-emblem-mascot-head-silhouette-sport-logotype-template-for-png_112996.jpg"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">GAMES</span><br><span id="a61">103</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a54" class="a53">
+                        <div id="a59"><img
+                                src="https://png.pngtree.com/element_our/png/20181206/placeholder-vector-icon-png_262268.jpg"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">HOTELS</span><br><span id="a61">40</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a55" class="a53">
+                        <div id="a59"><img
+                                src="https://png.pngtree.com/png-vector/20210121/ourmid/pngtree-circus-text-with-tend-png-image_2756301.jpg"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">CIRCUS</span><br><span id="a61">100</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a56" class="a53">
+                        <div id="a59"><img
+                                src="https://png.pngtree.com/png-vector/20220610/ourmid/pngtree-vector-theatre-masks-icon-isolated-on-white-background-png-image_4953952.png"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">THEATER</span><br><span id="a61">36</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a57" class="a53">
+                        <div id="a59"><img
+                                src="https://png.pngtree.com/png-vector/20200216/ourmid/pngtree-car-silhouette-design-for-printing-purpose-illustration-sport-car-design-vector-png-image_2148234.jpg"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">SPORTS</span><br><span id="a61">30</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                    <div id="a58" class="a53">
+                        <div id="a59"><img
+                                src="https://png.pngtree.com/element_our/sm/20180419/sm_5ad85cd7d9fa9.jpg"
+                                width="100%" height="100%"><br></div>
+                        <div class="a59"><span id="a60">HEALTH</span><br><span id="a61">12</span><span
+                                id="a62">LISTING</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                let x11 = document.querySelectorAll(".a53");
+                window.addEventListener("scroll", fff);
+    
+    
+                function fff() {
+                    let y11 = window.innerHeight;
+                    x11.forEach(a53 => {
+                        let z11 = a53.getBoundingClientRect().top;
+                        if (z11 < y11) {
+                            a53.classList.add("w11");
+                        }
+                        else { a53.classList.remove("w11") }
+                    });
+                }
+    
+                fff();
+            </script>
+        </div>
+    </section>
+</body>
+
+</html>
