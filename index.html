@@ -180,52 +180,42 @@
         color: white;
         font-size: 1.2vw;
     }
-
-    #a40 {
-        background-color: #ff414d;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5vw 0vw;
-        height: 3vw;
+    #a40
+    {
+        margin: 50px 0px;
     }
 
-    #a46 {
-        width: 100%;
-        height: 100%;
-        background-color: #ff414d;
+    #a40lord
+    {
+        /* background-color: #ff414d; */
+        height: 50px;
     }
-
-    #a41 {
-        background-color: white;
+    #a41
+    {
+        display: inline-block;
+        background-color: #dfdddd;
+        width: 200px;
         height: 100%;
-        width: 20vw;
-        padding: .2vw 0vw;
-        border-radius: 1vw;
+        
     }
-
-    #a45,
-    #a46,
-    #a47 {
+    #a45
+    {
+        /* background-color: black; */
         height: 100%;
-        width: 90%;
-        border-radius: 2vw;
+        padding: 5px 0px;
+    }
+    #a46 input
+    {
+        font-size: 1vw;
+        background-color: #dfdddd;
         border: transparent;
     }
-
-    #a42 {
-        color: black;
-        font-size: 1.5vw;
+    .a45
+    {
+        background-color: #ff414d;
     }
-
-    #a47 {
-        display: flex;
-        height: 100%;
-        width: 60vw;
-        justify-content: center;
-        align-items: center;
-        /* background-color: rgb(3, 231, 26); */
-    }
+    
+    
 
     #a50lord {
         background-color: #dfdddd;
@@ -458,6 +448,15 @@
     }
     @media(max-width:980px)
     {
+        #a41{
+            width: 150px;
+        }
+        #a46 input{
+            font-size: 1vw;
+        }
+        #a46{
+            font-size: 1vw;
+        }
         #a81master
         {
             width: 150px;
@@ -489,7 +488,7 @@
         }
         
 
-    }
+    }   
 
 
 
@@ -584,28 +583,21 @@
             font-size: 3vw;
         }
 
-        #a41 {
-            height: 5vw;
-            width: 40vw;
-            margin: 2vw 0vw;
-        }
 
-        #a40 {
-            display: flex;
-            height: 30vw;
-            align-items: center;
-            margin: 10vw 0vw;
-        }
-
-        #a47 {
+        #a41{
             display: block;
-            height: 100%;
-            width: 40vw;
+            width: 100%;
+            margin: 5px 0px;
+            
         }
-
-        #a42 i {
+        #a46{
+            font-size: 3vw;
+            text-align: center;
+        }
+        #a46 input{
             font-size: 3vw;
         }
+        
 
         #a50lord {
             height: auto;
@@ -682,6 +674,10 @@
 
     @media(max-width:500px)
     {
+        #a20lord
+        {
+            height: 270vw;
+        }
         #a84
         {
             font-size: 15px;
@@ -702,6 +698,7 @@
         {
             font-size: 25px;
         }
+
     }
 
     @media screen and (max-width: 750px) {
@@ -715,6 +712,7 @@
         }
 
     }
+    
 </style>
 
 <body>
@@ -763,14 +761,14 @@
                         id="a33">Find great places to stay, eat, shop, or visit from local experts.</span></span>
             </div>
             <div id="a40">
-                <div id="a47">
-                    <div id="a41"><span id="a42"><i class="fa fa-search">&nbsp;</i></span><input id="a45"
-                            placeholder="Where are U Looking For?" type="text"></div>
-                    <div id="a41"><span id="a42"><i class="fa fa-map-marker"></i></span><input id="a45"
-                            placeholder="Search Location" type="text"></div>
-                    <div id="a41"><span id="a42"><i class="fa fa-chevron-down"></i>All Categories</span></div>
-                    <div id="a41"><button id="a46"><span id="a42"><i class="fa fa-search"></i>SEARCH</span></button>
+                <center>
+                    <div id="a40lord">
+                        <div id="a41" class="a41"><div id="a45"><i class="fa fa-search"><span id="a46"><input type="text" placeholder="lokking for"></span></i></div></div>
+                        <div id="a41" class="a42"><div id="a45"><i class="fa fa-location-arrow"><span id="a46"><input type="text" placeholder="location"></span></i></div></div>
+                        <div id="a41" class="a43"><div id="a45"><i class="fa fa-arrow-down"><span id="a46">All Categories</span></i></div></div>
+                        <div id="a41" class="a44"><div id="a45" class="a45"><i class="fa fa-search"><span id="a46">SEARCH</span></i></div></div>
                     </div>
+                </center>
                 </div>
             </div>
         </div>
