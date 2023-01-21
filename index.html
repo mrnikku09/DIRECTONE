@@ -182,7 +182,7 @@
     }
 
     #a40 {
-        /* background-color: #ff414d; */
+        background-color: #ff414d;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -201,7 +201,7 @@
         height: 100%;
         width: 20vw;
         padding: .2vw 0vw;
-        border-radius: 2vw;
+        border-radius: 1vw;
     }
 
     #a45,
@@ -251,12 +251,17 @@
         justify-content: center;
         /* align-items: center; */
     }
-    .a52
-    {
+
+    .a52 {
         margin-top: 5vw;
     }
 
-    #a53,#a54,#a55,#a56,#a57,#a58 {
+    #a53,
+    #a54,
+    #a55,
+    #a56,
+    #a57,
+    #a58 {
         height: 100%;
         width: 50%;
         margin: 0vw 1.5vw;
@@ -267,44 +272,50 @@
         transition: .3s ease-in;
     }
 
-    #a53:hover { 
+    #a53:hover {
         background-color: #ff414d;
         transform: scale(1.1);
     }
-    #a54:hover { 
+
+    #a54:hover {
         background-color: #ff414d;
         transform: scale(1.1);
     }
-    #a55:hover { 
+
+    #a55:hover {
         background-color: #ff414d;
         transform: scale(1.1);
     }
-    #a56:hover { 
+
+    #a56:hover {
         background-color: #ff414d;
         transform: scale(1.1);
     }
-    #a57:hover { 
+
+    #a57:hover {
         background-color: #ff414d;
         transform: scale(1.1);
     }
-    #a58:hover { 
+
+    #a58:hover {
         background-color: #ff414d;
         transform: scale(1.1);
     }
+
     .a53 {
-            
-            transform: translateY(40%);
-            transition: transform 1s ease;
 
-        }
+        transform: translateY(40%);
+        transition: transform 1s ease;
 
-        .a53:nth-last-of-type(even) {
-            transform: translateY(8vw);
-        }
+    }
 
-        .a53.w11 {
-            transform: translateY(0);
-        }
+    .a53:nth-last-of-type(even) {
+        transform: translateY(8vw);
+    }
+
+    .a53.w11 {
+        transform: translateY(0);
+    }
 
     #a59 {
         width: 100%;
@@ -340,8 +351,148 @@
         /* background-color: gray; */
     }
 
+    #a70lord {
+        background-color: #dfdddd;
+        /* border: solid red 2px; */
+        padding: 50px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    @media only screen and (max-width:768px) {
+    #a71master {
+        text-align: center;
+    }
+
+    #a72 {
+        color: #ff414d;
+        font-size: 20PX;
+    }
+
+    #a73 {
+        font-size: 50PX;
+    }
+
+    #a80lord {
+        width: 100%;
+        height: auto;
+        background-color: #f0f4f7;
+        padding: 100px 0px;
+    }
+
+    #a81master {
+        background-color: #f0f4f7;
+        width: 400px;
+        margin: 0px 20px;
+        display: inline-block;
+        height: auto;
+    }
+
+    #a82 {
+        width: 400px;
+        background-color: white;
+        height: 700px;
+        /* display: inline-block; */
+    }
+    #a83
+    {
+        height: 50%;
+    }
+    #a84
+    {
+        color: #ff414d;
+        font-weight: bold;
+    }
+    #a85
+    {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #a86
+    {
+        font-size: 20px;
+        color: grey;
+    }
+    #a87
+    {
+        font-size: 20px;
+        color: grey;
+    }
+
+    #a88
+    {
+        height: 50%;
+        padding: 30px 5px;
+    }
+    #a89
+    {
+        font-size: 20px;
+        color: grey;
+    }
+
+    @media(max-width:1775px)
+    {
+        #a81master
+        {
+            width: 300px;
+        }
+        #a82
+        {
+            width: 300px;
+            height: auto;
+        }
+    }
+    @media(max-width:1380px)
+    {
+        #a81master
+        {
+            width: 200px;
+        }
+        #a82
+        {
+            width: 200px;
+            height: auto;
+        }
+    }
+    @media(max-width:980px)
+    {
+        #a81master
+        {
+            width: 150px;
+        }
+        #a82
+        {
+            width: 150px;
+            height: auto;
+        }
+        #a84
+        {
+            font-size: 12px;
+        }
+        #a85
+        {
+            font-size: 14px;
+        }
+        #a86
+        {
+            font-size: 10px;
+        }
+        #a87
+        {
+            font-size: 10px;
+        }
+        #a89
+        {
+            font-size: 13px;
+        }
+        
+
+    }
+
+
+
+
+    @media screen and (max-width:768px) {
         #a12 {
             font-size: 2.5vw;
         }
@@ -454,35 +605,112 @@
             font-size: 3vw;
         }
 
-        #a50lord
-        {
+        #a50lord {
             height: auto;
         }
-        #a51main{
+
+        #a51main {
             height: 100%;
         }
 
-        #a52
-        {
+        #a52 {
             display: block;
         }
-        #a53,#a54,#a55,#a56,#a57,#a58{
+
+        #a53,
+        #a54,
+        #a55,
+        #a56,
+        #a57,
+        #a58 {
             width: 100%;
             /* display: flex; */
             height: 100vw;
         }
-        #a59
-        {
+
+        #a59 {
             height: 70%;
         }
-        #a60
-        {
+
+        #a60 {
             font-size: 8vw;
         }
-       #a61,#a62 {
-        font-size: 5vw;
+
+        #a61,
+        #a62 {
+            font-size: 5vw;
         }
 
+        #a70lord {
+            padding: 50px 0px;
+        }
+        #a81master
+        {
+            display: block;
+            width: 100%;
+        }
+        #a82
+        {
+            display: block;
+            width: 100%;
+        }
+        
+        #a84
+        {
+            font-size: 20px;
+        }
+        #a85
+        {
+            font-size: 30px;
+        }
+        #a86
+        {
+            font-size: 20px;
+        }
+        #a87
+        {
+            font-size: 20px;
+        }
+        #a89
+        {
+            font-size: 30px;
+        }
+
+    }
+
+    @media(max-width:500px)
+    {
+        #a84
+        {
+            font-size: 15px;
+        }
+        #a85
+        {
+            font-size: 25px;
+        }
+        #a86
+        {
+            font-size: 15px;
+        }
+        #a87
+        {
+            font-size: 15px;
+        }
+        #a89
+        {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        #a72 {
+            color: #ff414d;
+            font-size: 15PX;
+        }
+
+        #a73 {
+            font-size: 30PX;
+        }
 
     }
 </style>
@@ -534,7 +762,7 @@
             </div>
             <div id="a40">
                 <div id="a47">
-                    <div id="a41"><span id="a42"><i class="fa fa-search"></i></span><input id="a45"
+                    <div id="a41"><span id="a42"><i class="fa fa-search">&nbsp;</i></span><input id="a45"
                             placeholder="Where are U Looking For?" type="text"></div>
                     <div id="a41"><span id="a42"><i class="fa fa-map-marker"></i></span><input id="a45"
                             placeholder="Search Location" type="text"></div>
@@ -632,8 +860,7 @@
                                 id="a62">LISTING</span></div>
                     </div>
                     <div id="a58" class="a53">
-                        <div id="a59"><img
-                                src="https://png.pngtree.com/element_our/sm/20180419/sm_5ad85cd7d9fa9.jpg"
+                        <div id="a59"><img src="https://png.pngtree.com/element_our/sm/20180419/sm_5ad85cd7d9fa9.jpg"
                                 width="100%" height="100%"><br></div>
                         <div class="a59"><span id="a60">HEALTH</span><br><span id="a61">12</span><span
                                 id="a62">LISTING</span></div>
@@ -644,8 +871,8 @@
             <script>
                 let x11 = document.querySelectorAll(".a53");
                 window.addEventListener("scroll", fff);
-    
-    
+
+
                 function fff() {
                     let y11 = window.innerHeight;
                     x11.forEach(a53 => {
@@ -656,11 +883,65 @@
                         else { a53.classList.remove("w11") }
                     });
                 }
-    
+
                 fff();
             </script>
         </div>
     </section>
+
+    <section>
+        <div id="a70lord">
+            <div id="a71master">
+                <span id="a72"><b>OUR LISTINING</b></span><br>
+                <span id="a73"><b>POPULAR LISTINING</b></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <center>
+            <div id="a80lord">
+                <div id="a81master">
+                    <center>
+                        <div id="a82">
+                            <div id="a83"><img src="https://preview.colorlib.com/theme/directone/images/list-1.jpg.webp"
+                                    width="100%" height="100%"></div><div id="a88"><span id="a84">FOOD & DRINKS</span><br><br>
+                                <span id="a85">Japanese Restaurant</span><br><br><span id="a86">Suite 721 New York NY 10016</span><br><br><span id="a87">+00 123 456 7890</span><br><hr><span id="a89">Review 5.0/5 (100)</span></div>
+                        </div>
+                    </center>
+                </div>
+                <div id="a81master">
+                    <center>
+                        <div id="a82">
+                            <div id="a83"><img src="https://preview.colorlib.com/theme/directone/images/list-2.jpg.webp"
+                                    width="100%" height="100%"></div><div id="a88"><span id="a84">FOOD & DRINKS</span><br><br>
+                                        <span id="a85">Japanese Restaurant</span><br><br><span id="a86">Suite 721 New York NY 10016</span><br><br><span id="a87">+00 123 456 7890</span><br><hr><span id="a89">Review 5.0/5 (100)</span></div>
+                        </div>
+                    </center>
+                </div>
+                <div id="a81master">
+                    <center>
+                        <div id="a82">
+                            <div id="a83"><img src="https://preview.colorlib.com/theme/directone/images/list-3.jpg.webp"
+                                    width="100%" height="100%"></div><div id="a88"><span id="a84">FOOD & DRINKS</span><br><br>
+                                        <span id="a85">Japanese Restaurant</span><br><br><span id="a86">Suite 721 New York NY 10016</span><br><br><span id="a87">+00 123 456 7890</span><br><hr><span id="a89">Review 5.0/5 (100)</span></div>
+                        </div>
+                    </center>
+                </div>
+                <div id="a81master">
+                    <center>
+                        <div id="a82">
+                            <div id="a83"><img src="https://preview.colorlib.com/theme/directone/images/list-4.jpg.webp"
+                                    width="100%" height="100%"></div><div id="a88"><span id="a84">FOOD & DRINKS</span><br><br>
+                                        <span id="a85">Japanese Restaurant</span><br><br><span id="a86">Suite 721 New York NY 10016</span><br><br><span id="a87">+00 123 456 7890</span><br><hr><span id="a89">Review 5.0/5 (100)</span></div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </center>
+    </section>
+
 </body>
 
 </html>
