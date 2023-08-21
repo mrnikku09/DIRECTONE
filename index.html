@@ -27,6 +27,22 @@
         margin: 0px;
     }
 
+    #topgone{
+            width: 100%;
+            height: 100vh;
+            gap: 50px;
+            font-size: 20px;
+            background-color: #0c1016;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 100;
+        }
+        /* #material{
+            position: absolute;
+        } */
     #a11 {
         background-color: rgb(0, 0, 0);
         /* padding:0.2vw 5vw;  */
@@ -1173,6 +1189,10 @@
     }
 
     @media(max-width:500px) {
+        #topgone{
+            font-size: 10px;
+            gap:10px;
+        }
         #a20lord {
             height: 270vw;
         }
@@ -1261,6 +1281,11 @@
 </style>
 
 <body>
+    <div id="topgone">
+        <span id="topgone1">HI</span><span id="topgone2">WELCOME</span><span id="topgone3">TO</span><span id="topgone4">THE</span><span id="topgone5">DIRECTONE</span>
+    </div>
+    
+    
     <header>
         <div id="a11">
             <span id="a12"><span id="a13">Free Call</span><span id="a14">+1 234 456 78910</span></span>
@@ -1774,6 +1799,51 @@
             </div>
         </div>
     </section>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var t2=gsap.timeline();
+t2
+    .from("#topgone1",{
+        opacity:0,
+        duration:.7,
+        y:10,
+        color:"red"
+    })
+    .from("#topgone2",{
+        opacity:0,
+        duration:.5,
+        y:10,
+        color:"red"
+    })
+    .from("#topgone3",{
+        opacity:0,
+        duration:.5,
+        y:10,
+        color:"red"
+    })
+    .from("#topgone4",{
+        opacity:0,
+        duration:.5,
+        y:10,
+        color:"red"
+    })
+    .from("#topgone5",{
+        opacity:0,
+        duration:.5,
+        y:10,
+        color:"red"
+    })
+    .to("#topgone",{
+        y:"-100%",
+        // delay:1,
+        duration:1,
+        // position:"absolute",
+        ease:"Power4.easeOut"
+    })
+        
+    </script>
 </body>
 
 </html>
