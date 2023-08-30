@@ -276,40 +276,40 @@
         border-radius: 1vw;
         background-color: white;
         cursor: pointer;
-        transition: .3s ease-in;
+        /* transition: .3s ease-in; */
     }
 
     #a53:hover {
         background-color: #ff414d;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     #a54:hover {
         background-color: #ff414d;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     #a55:hover {
         background-color: #ff414d;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     #a56:hover {
         background-color: #ff414d;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     #a57:hover {
         background-color: #ff414d;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     #a58:hover {
         background-color: #ff414d;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
-    .a53 {
+    /* .a53 {
 
         transform: translateY(40%);
         transition: transform 1s ease;
@@ -322,7 +322,7 @@
 
     .a53.w11 {
         transform: translateY(0);
-    }
+    } */
 
     #a59 {
         width: 100%;
@@ -407,7 +407,7 @@
         display: inline-block;
     }
 
-    .a82 {
+    /* .a82 {
 
         transform: translateY(40%);
         transition: transform 1s ease;
@@ -420,11 +420,11 @@
 
     .a82.w12 {
         transform: translateY(0);
-    }
+    } */
 
 
     #a82:hover {
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
         cursor: pointer;
         box-shadow: 5px 5px 10px 10px black;
     }
@@ -1448,7 +1448,7 @@
                 </div>
             </div>
 
-            <script>
+            <!-- <script>
                 let x11 = document.querySelectorAll(".a53");
                 window.addEventListener("scroll", fff);
 
@@ -1465,7 +1465,7 @@
                 }
 
                 fff();
-            </script>
+            </script> -->
         </div>
     </section>
 
@@ -1677,7 +1677,7 @@
                 </div>
             </div>
         </center>
-        <script>
+        <!-- <script>
             let x12 = document.querySelectorAll(".a82");
             window.addEventListener("scroll", fff);
 
@@ -1694,7 +1694,7 @@
             }
 
             fff();
-        </script>
+        </script> -->
     </section>
 
 
@@ -1802,6 +1802,7 @@
    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         var t2=gsap.timeline();
 t2
@@ -1843,6 +1844,115 @@ t2
         ease:"Power4.easeOut"
     })
         
+    
+    var t3=gsap.timeline();
+    t3
+        .from("#a51main",{
+            opacity:0,
+            y:100,
+            duration:1,
+            stagger:1,
+            // ease:"Power4.easeOut",
+            delay:1,
+            scrollTrigger:{
+                trigger:"#a51main",
+                scroller:"body",
+                scrub:5,
+                // markers:true,
+                start:"top 60%",
+                end:"top 90%"
+            }
+        })
+
+    var t4=gsap.timeline();
+    t4
+        .from("#a80lord",{
+            opacity:0,
+            y:100,
+            duration:1,
+            // stagger:1,
+            // ease:"Power4.easeOut",
+            // delay:1,
+            scrollTrigger:{
+                trigger:"#a80lord",
+                scroller:"body",
+                scrub:5,
+                // markers:true,
+                start:"top 60%",
+                end:"top 90%"
+            }
+        })
+    var t5=gsap.timeline();
+    t5
+        .from("#section7 #a80lord #a81master center #a82",{
+            opacity:0,
+            y:200,
+            duration:5,
+            stagger:1,
+            // ease:"Power4.easeOut",
+            // delay:1,
+            scrollTrigger:{
+                trigger:"#section7",
+                scroller:"body",
+                scrub:5,
+                // markers:true,
+                start:"top 50%",
+                end:"top 90%"
+            }
+        })
+    var t6=gsap.timeline();
+    t6
+    .from("#b12",{
+            opacity:0,
+            x:-200,
+            duration:3,
+            stagger:1,
+            // ease:"Power4.easeOut",
+            // delay:1,
+            scrollTrigger:{
+                trigger:"#b12",
+                scroller:"body",
+                scrub:2,
+                markers:true,
+                start:"top 40%",
+                end:"top 90%"
+            }
+        })
+        .from("#b13",{
+            opacity:0,
+            x:200,
+            duration:3,
+            stagger:1,
+            // ease:"Power4.easeOut",
+            // delay:1,
+            scrollTrigger:{
+                trigger:"#b13",
+                scroller:"body",
+                scrub:2,
+                // markers:true,
+                start:"top 40%",
+                end:"top 90%"
+            }
+        })
+        var t7=gsap.timeline();
+        t7
+            .to("#b49",{
+                // opacity:0,
+                scale:1.5,
+                // duration:1,
+                // stagger:1,
+                // ease:"Power4.easeOut",
+                // delay:1,
+                scrollTrigger:{
+                    trigger:"#b49",
+                    scroller:"body",
+                    scrub:5,
+                    // markers:true,
+                    start:"top 70%",
+                    end:"top 90%"
+                }
+            })
+        var t6=gsap.timeline();
     </script>
 </body>
 
